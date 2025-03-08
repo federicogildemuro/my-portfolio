@@ -1,1 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: "Press Start 2P", sans-serif;
+        background-color: #1e1e1e;
+        color: #00ff00;
+    }
+}
