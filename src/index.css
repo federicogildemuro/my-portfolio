@@ -8,3 +8,13 @@
         color: #00ff00;
     }
 }
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-start infinite;
+}
