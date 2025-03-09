@@ -1,10 +1,7 @@
 function Header() {
     return (
-        <header className="p-3">
-            <h1 className="text-2xl">
-                C:\federico_gil_de_muro.exe
-                <span className="animate-blink">_</span>
-            </h1>
+        <header className="p-3 text-color-green">
+            <h1 className="text-2xl">C:\portfolio\federico_gil_de_muro.exe</h1>
         </header>
     );
 }
