@@ -1,20 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import "tailwindcss";
 
-@layer base {
-    body {
-        font-family: "Press Start 2P", sans-serif;
-        background-color: #1e1e1e;
-        color: #00ff00;
-    }
+:root {
+    --color-dark-grey: #1e1e1e;
+    --color-white: #d3d3d3;
+    --color-green: #00ff00;
+    --color-ambar: #ffbf00;
+    --color-cyan: #00ffff;
+    --color-pink: #ff1493;
+    --color-purple: #8a2be2;
+    --color-yellow: #ffff00;
+}
+
+body {
+    font-family: "Press Start 2P", sans-serif;
+    background-color: var(--color-dark-grey);
+}
+
+.text-color-white {
+    color: var(--color-white);
+}
+
+.text-color-green {
+    color: var(--color-green);
+}
+
+.text-color-ambar {
+    color: var(--color-ambar);
+}
+
+.text-color-cyan {
+    color: var(--color-cyan);
+}
+
+.text-color-pink {
+    color: var(--color-pink);
+}
+
+.text-color-purple {
+    color: var(--color-purple);
+}
+
+.text-color-yellow {
+    color: var(--color-yellow);
+}
+
+.animate-blink {
+    animation: blink 1s step-start infinite;
 }
 
 @keyframes blink {
     50% {
         opacity: 0;
     }
-}
-
-.animate-blink {
-    animation: blink 1s step-start infinite;
 }
