@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 
 function Hero() {
+    // State to control when the image should appear
+    const [imageLoaded, setImageLoaded] = useState(false);
+    // State to control when the typing animation should start
+    const [startTyping, setStartTyping] = useState(false);
     // State to store the text
     const [text, setText] = useState('');
     // State to store the line index
@@ -8,8 +12,25 @@ function Hero() {
     // State to store the character index
     const [charIndex, setCharIndex] = useState(0);
 
+    // Use effect to control the image appearance and start typing
+    useEffect(() => {
+        // Wait for the image to appear first
+        const imageTimeout = setTimeout(() => setImageLoaded(true), 1000);
+        // After the image is loaded, start typing after an additional 1 second delay
+        if (imageLoaded) {
+            const typingStartTimeout = setTimeout(() => setStartTyping(true), 2000);
+            // Clear the timeout when the typing animation starts
+            return () => clearTimeout(typingStartTimeout);
+        }
+        // Clear the timeout when the component is unmounted
+        return () => clearTimeout(imageTimeout);
+    }, [imageLoaded]);
+
     // Use effect to type the text
     useEffect(() => {
+        // Check if the typing animation should start
+        if (!startTyping) return;
+
         // Lines to type
         const lines = [
             "Hi, I'm Federico.",
@@ -50,20 +71,22 @@ function Hero() {
 
         // Clear interval when the component is unmounted
         return () => clearInterval(interval);
-    }, [lineIndex, charIndex]);
+    }, [startTyping, lineIndex, charIndex]);
 
     return (
         <section className="h-screen flex flex-col justify-start items-center gap-10 p-10 lg:p-20 text-center text-color-green">
             <img
                 src="profile.jpg"
                 alt="Pixel art portrait of Federico Gil de Muro"
-                className="w-64 h-auto object-cover border-5"
+                className={`w-64 h-auto object-cover border-5 ${imageLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
             />
 
-            <p className="whitespace-pre-wrap">
-                {text}
-                <span className="animate-blink">_</span>
-            </p>
+            {startTyping && (
+                <p className="whitespace-pre-wrap">
+                    {text}
+                    <span className="animate-blink">_</span>
+                </p>
+            )}
         </section>
     );
 }
