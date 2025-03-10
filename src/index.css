@@ -17,39 +17,45 @@ body {
 
 .text-color-white {
     color: var(--color-white);
+    text-shadow: 0 0 0.25rem var(--color-white);
+    animation: scanline 5s linear infinite;
 }
 
 .text-color-green {
     color: var(--color-green);
+    text-shadow: 0 0 0.25rem var(--color-green);
+    animation: scanline 5s linear infinite;
 }
 
 .text-color-amber {
     color: var(--color-amber);
+    text-shadow: 0 0 0.25rem var(--color-amber);
+    animation: scanline 5s linear infinite;
 }
 
 .text-color-cyan {
     color: var(--color-cyan);
+    text-shadow: 0 0 0.25rem var(--color-cyan);
+    animation: scanline 5s linear infinite;
 }
 
 .text-color-pink {
     color: var(--color-pink);
+    text-shadow: 0 0 0.25rem var(--color-pink);
+    animation: scanline 5s linear infinite;
 }
 
-.text-color-purple {
-    color: var(--color-purple);
+.text-shadow-none {
+    text-shadow: none;
 }
 
-.text-color-yellow {
-    color: var(--color-yellow);
-}
-
-.animate-blink {
-    animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
+@keyframes scanline {
+    0%,
+    100% {
+        opacity: 1;
+    }
     50% {
-        opacity: 0;
+        opacity: 0.9;
     }
 }
 
@@ -71,6 +77,16 @@ body {
     }
     100% {
         transform: scaleY(1);
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
         opacity: 0;
     }
 }
