@@ -6,15 +6,15 @@ import Contact from './sections/Contact';
 
 function App() {
     return (
-        <div>
+        <>
             <Header />
-            <main>
+            <main className="text-sm sm:text-base md:text-lg lg:text-xl">
                 <Hero />
                 <About />
                 <Projects />
                 <Contact />
             </main>
-        </div>
+        </>
     );
 }
 
