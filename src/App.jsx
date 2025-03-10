@@ -1,3 +1,4 @@
+import CRTScreenOn from './components/CRTScreenOn';
 import Header from './components/Header';
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -6,7 +7,7 @@ import Contact from './sections/Contact';
 
 function App() {
     return (
-        <>
+        <CRTScreenOn>
             <Header />
             <main className="text-sm sm:text-base md:text-lg lg:text-xl">
                 <Hero />
@@ -14,7 +15,7 @@ function App() {
                 <Projects />
                 <Contact />
             </main>
-        </>
+        </CRTScreenOn>
     );
 }
 
