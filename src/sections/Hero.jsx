@@ -14,7 +14,7 @@ function Hero() {
         const lines = [
             "Hi, I'm Federico.",
             "You can know more about me in this website.",
-            "Feel free to reach out if you have any questions.",
+            "Feel free to reach out if you have any question.",
             "I'm looking forward to hearing from you!"
         ];
 
@@ -53,14 +53,14 @@ function Hero() {
     }, [lineIndex, charIndex]);
 
     return (
-        <section className="h-screen flex flex-col justify-start items-center gap-10 p-20 text-center text-color-ambar">
+        <section className="h-screen flex flex-col justify-start items-center gap-10 p-10 lg:p-20 text-center text-color-green">
             <img
                 src="profile.jpg"
                 alt="Pixel art portrait of Federico Gil de Muro"
                 className="w-64 h-auto object-cover border-5"
             />
 
-            <p className="text-2xl whitespace-pre-wrap">
+            <p className="whitespace-pre-wrap">
                 {text}
                 <span className="animate-blink">_</span>
             </p>
