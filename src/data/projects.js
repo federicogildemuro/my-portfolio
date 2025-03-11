@@ -1,9 +1,10 @@
 const projects = [
     {
-        name: 'Portfolio',
+        name: 'My Portfolio',
         description: 'Personal portfolio website showcasing my skills, projects, and contact information.',
         techIcons: ['react-plain colored', 'tailwindcss-plain colored'],
         github: 'https://github.com/federicogildemuro/my-portfolio',
+        demo: 'https://federico-gil-de-muro-portfolio.vercel.app/',
         image: 'portfolio.jpg'
     },
     {
