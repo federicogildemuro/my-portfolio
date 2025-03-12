@@ -39,7 +39,7 @@ function About() {
             <p>
                 You can download my CV by clicking {''}
                 <a
-                    href="public/cv-federico-gil-de-muro.pdf"
+                    href="cv-federico-gil-de-muro.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-color-white hover:underline"
