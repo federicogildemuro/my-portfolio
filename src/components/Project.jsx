@@ -14,7 +14,7 @@ function Project({ project }) {
 
                 <div className="flex flex-wrap justify-center items-center gap-5">
                     {project.techIcons.map((icon, index) => (
-                        <i key={index} className={`devicon-${icon} text-3xl text-shadow-none`} />
+                        <i key={index} className={`${icon.class} text-3xl`} title={icon.name} aria-label={icon.name} />
                     ))}
                 </div>
 
