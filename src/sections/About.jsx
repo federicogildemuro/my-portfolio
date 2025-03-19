@@ -1,3 +1,5 @@
+import { frontendIcons, backendIcons, databaseIcons, toolsIcons } from '../data/technologies';
+
 function About() {
     return (
         <section className="flex flex-col justify-start items-center gap-10 p-10 lg:p-20 text-center text-color-amber">
@@ -8,32 +10,30 @@ function About() {
 
             <div className="flex flex-wrap justify-center items-center gap-5">
                 <h3>Frontend:</h3>
-                <i className="devicon-html5-plain-wordmark colored text-3xl text-shadow-none" aria-label="HTML" />
-                <i className="devicon-css3-plain-wordmark colored text-3xl text-shadow-none" aria-label="CSS" />
-                <i className="devicon-sass-original colored text-3xl text-shadow-none" aria-label="Sass" />
-                <i className="devicon-bootstrap-plain colored text-3xl text-shadow-none" aria-label="Bootstrap" />
-                <i className="devicon-tailwindcss-plain colored text-3xl text-shadow-none" aria-label="Tailwind" />
-                <i className="devicon-javascript-plain colored text-3xl text-shadow-none" aria-label="JavaScript" />
-                <i className="devicon-typescript-plain colored text-3xl text-shadow-none" aria-label="TypeScript" />
-                <i className="devicon-angularjs-plain colored text-3xl text-shadow-none" aria-label="Angular" />
-                <i className="devicon-react-plain colored text-3xl text-shadow-none" aria-label="React" />
+                {frontendIcons.map((icon, index) => (
+                    <i key={index} className={`${icon.class} text-3xl`} title={icon.name} aria-label={icon.name} />
+                ))}
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-5">
                 <h3>Backend:</h3>
-                <i className="devicon-c-plain colored text-3xl text-shadow-none" aria-label="C" />
-                <i className="devicon-java-plain colored text-3xl text-shadow-none" aria-label="Java" />
-                <i className="devicon-nodejs-plain-wordmark colored text-3xl text-shadow-none" aria-label="Node" />
-                <i className="devicon-express-original text-3xl text-shadow-none" aria-label="Express" />
-                <i className="devicon-socketio-original text-3xl text-shadow-none" aria-label="Socket.io" />
-                <i className="devicon-handlebars-original text-3xl text-shadow-none" aria-label="Handlebars" />
+                {backendIcons.map((icon, index) => (
+                    <i key={index} className={`${icon.class} text-3xl`} title={icon.name} aria-label={icon.name} />
+                ))}
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-5">
                 <h3>Databases:</h3>
-                <i className="devicon-mysql-plain colored text-3xl text-shadow-none" aria-label="MySQL" />
-                <i className="devicon-mongodb-plain colored text-3xl text-shadow-none" aria-label="MongoDB" />
-                <i className="devicon-firebase-plain colored text-3xl text-shadow-none" aria-label="Firebase" />
+                {databaseIcons.map((icon, index) => (
+                    <i key={index} className={`${icon.class} text-3xl`} title={icon.name} aria-label={icon.name} />
+                ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-5">
+                <h3>Tools:</h3>
+                {toolsIcons.map((icon, index) => (
+                    <i key={index} className={`${icon.class} text-3xl`} title={icon.name} aria-label={icon.name} />
+                ))}
             </div>
 
             <p>
