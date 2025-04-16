@@ -8,6 +8,7 @@ const frontendIcons = [
     { name: 'Angular', class: 'devicon-angular-plain' },
     { name: 'React', class: 'devicon-react-original' },
     { name: 'Tailwind', class: 'devicon-tailwindcss-original' },
+    { name: 'Alpine', class: 'devicon-alpinejs-original' },
 ];
 
 const backendIcons = [
@@ -17,6 +18,8 @@ const backendIcons = [
     { name: 'Express', class: 'devicon-express-original' },
     { name: 'Socket.io', class: 'devicon-socketio-original' },
     { name: 'Handlebars', class: 'devicon-handlebars-original' },
+    { name: 'PHP', class: 'devicon-php-plain' },
+    { name: 'Laravel', class: 'devicon-laravel-original' },
 ];
 
 const databaseIcons = [
@@ -33,6 +36,7 @@ const toolsIcons = [
     { name: 'Markdown', class: 'devicon-markdown-original' },
     { name: 'Jira', class: 'devicon-jira-plain' },
     { name: 'Trello', class: 'devicon-trello-plain' },
+    { name: 'Docker', class: 'devicon-docker-plain' },
 ];
 
 export { frontendIcons, backendIcons, databaseIcons, toolsIcons };
