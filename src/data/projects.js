@@ -1,5 +1,19 @@
 const projects = [
     {
+        name: 'Dartom',
+        description: 'Barbershop booking app that allows users to schedule, cancel, and view their appointment history.',
+        techIcons: [
+            { name: 'PHP', class: 'devicon-php-plain' },
+            { name: 'Laravel', class: 'devicon-laravel-original' },
+            { name: 'MySQL', class: 'devicon-mysql-original' },
+            { name: 'Tailwind', class: 'devicon-tailwindcss-original' },
+            { name: 'Alpine', class: 'devicon-alpinejs-original' },
+        ],
+        github: 'https://github.com/federicogildemuro/dartom',
+        demo: 'https://dartom.onrender.com/',
+        image: 'dartom.jpg'
+    },
+    {
         name: 'My Portfolio',
         description: 'Personal portfolio website showcasing my skills, projects, and contact information.',
         techIcons: [
@@ -87,7 +101,7 @@ const projects = [
         image: 'tom-misch.jpg'
     },
     {
-        name: 'Prolijin',
+        name: 'Prolijín',
         description: 'Program for managing clients, products, orders, suppliers, and cash flow, designed for efficient data handling and streamlined operations.',
         techIcons: [
             { name: 'C', class: 'devicon-c-plain' },
