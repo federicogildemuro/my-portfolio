@@ -1,114 +1,122 @@
 const projects = [
     {
-        name: 'Dartom',
-        description: 'Barbershop booking app that allows users to schedule, cancel, and view their appointment history.',
+        name: "Pintores MDP",
+        description:
+            "Web application for a painting company. Users can view services, learn about the company, and contact them easily.",
         techIcons: [
-            { name: 'PHP', class: 'devicon-php-plain' },
-            { name: 'Laravel', class: 'devicon-laravel-original' },
-            { name: 'MySQL', class: 'devicon-mysql-original' },
-            { name: 'Tailwind', class: 'devicon-tailwindcss-original' },
-            { name: 'Alpine', class: 'devicon-alpinejs-original' },
+            { name: "Vue", class: "devicon-vuejs-plain" },
+            { name: "Tailwind", class: "devicon-tailwindcss-original" },
         ],
-        github: 'https://github.com/federicogildemuro/dartom',
-        demo: 'https://dartom.onrender.com/',
-        image: 'dartom.jpg'
+        github: "https://github.com/federicogildemuro/pintores-mdp",
+        demo: "https://pintoresmdp.com.ar",
+        image: "pintores-mdp.jpg",
     },
     {
-        name: 'My Portfolio',
-        description: 'Personal portfolio website showcasing my skills, projects, and contact information.',
+        name: "Dartom",
+        description:
+            "Barbershop booking app that allows users to schedule, cancel, and view their appointment history.",
         techIcons: [
-            { name: 'React', class: 'devicon-react-original' },
-            { name: 'Tailwind', class: 'devicon-tailwindcss-original' },
+            { name: "Laravel", class: "devicon-laravel-original" },
+            { name: "MySQL", class: "devicon-mysql-original" },
+            { name: "Tailwind", class: "devicon-tailwindcss-original" },
         ],
-        github: 'https://github.com/federicogildemuro/my-portfolio',
-        demo: 'https://federico-gil-de-muro-portfolio.vercel.app/',
-        image: 'my-portfolio.jpg'
+        github: "https://github.com/federicogildemuro/dartom",
+        demo: "https://dartom.onrender.com/",
+        image: "dartom.jpg",
     },
     {
-        name: 'Simple Chat',
-        description: 'Basic chat application where users can join a room and send messages in real-time.',
+        name: "My Portfolio",
+        description:
+            "Personal portfolio website showcasing my skills, projects, and contact information.",
         techIcons: [
-            { name: 'JavaScript', class: 'devicon-javascript-plain' },
-            { name: 'Node', class: 'devicon-nodejs-plain-wordmark' },
-            { name: 'Express', class: 'devicon-express-original' },
-            { name: 'Socket.io', class: 'devicon-socketio-original' },
-            { name: 'Handlebars', class: 'devicon-handlebars-original' },
-            { name: 'Bootstrap', class: 'devicon-bootstrap-plain' },
+            { name: "React", class: "devicon-react-original" },
+            { name: "Tailwind", class: "devicon-tailwindcss-original" },
         ],
-        github: 'https://github.com/federicogildemuro/simple-chat',
-        demo: 'https://husky-sordid-donkey.glitch.me/',
-        image: 'simple-chat.jpg'
+        github: "https://github.com/federicogildemuro/my-portfolio",
+        demo: "https://federico-gil-de-muro-portfolio.vercel.app",
+        image: "my-portfolio.jpg",
     },
     {
-        name: 'Kyo Sushi',
-        description: 'E-commerce website for a sushi delivery. Users can browse the menu, add items to the cart, and place an order.',
+        name: "Simple Chat",
+        description:
+            "Basic chat application where users can join a room and send messages in real-time.",
         techIcons: [
-            { name: 'React', class: 'devicon-react-original' },
-            { name: 'Firebase', class: 'devicon-firebase-plain' },
-            { name: 'Bootstrap', class: 'devicon-bootstrap-plain' },
+            { name: "Node", class: "devicon-nodejs-plain-wordmark" },
+            { name: "Express", class: "devicon-express-original" },
+            { name: "Bootstrap", class: "devicon-bootstrap-plain" },
         ],
-        github: 'https://github.com/federicogildemuro/kyo-sushi',
-        demo: 'https://kyo-sushi.netlify.app/',
-        image: 'kyo-sushi.jpg'
+        github: "https://github.com/federicogildemuro/simple-chat",
+        demo: "https://husky-sordid-donkey.glitch.me",
+        image: "simple-chat.jpg",
     },
     {
-        name: 'E-commerce API-REST',
-        description: 'RESTful API for e-commerce, allowing users to browse products, manage their cart, and place orders.',
+        name: "Kyo Sushi",
+        description:
+            "E-commerce website for a sushi delivery. Users can browse the menu, add items to the cart, and place an order.",
         techIcons: [
-            { name: 'JavaScript', class: 'devicon-javascript-plain' },
-            { name: 'Node', class: 'devicon-nodejs-plain-wordmark' },
-            { name: 'Express', class: 'devicon-express-original' },
-            { name: 'Socket.io', class: 'devicon-socketio-original' },
-            { name: 'Handlebars', class: 'devicon-handlebars-original' },
-            { name: 'MongoDB', class: 'devicon-mongodb-plain' },
+            { name: "React", class: "devicon-react-original" },
+            { name: "Firebase", class: "devicon-firebase-plain" },
+            { name: "Bootstrap", class: "devicon-bootstrap-plain" },
         ],
-        github: 'https://github.com/federicogildemuro/backend-coderhouse',
-        demo: 'https://e-commerce-api-rest.onrender.com/api/docs',
-        image: 'ecommerce-api.jpg'
+        github: "https://github.com/federicogildemuro/kyo-sushi",
+        demo: "https://kyo-sushi.netlify.app",
+        image: "kyo-sushi.jpg",
     },
     {
-        name: 'Funko Shop',
-        description: 'E-commerce website for a Funko Pop! store. Users can browse the catalog, add items to the cart, and place an order.',
+        name: "E-commerce API-REST",
+        description:
+            "RESTful API for e-commerce, allowing users to browse products, manage their cart, and place orders.",
         techIcons: [
-            { name: 'TypeScript', class: 'devicon-typescript-plain' },
-            { name: 'Angular', class: 'devicon-angularjs-plain' },
-            { name: 'Firebase', class: 'devicon-firebase-plain' },
+            { name: "Node", class: "devicon-nodejs-plain-wordmark" },
+            { name: "Express", class: "devicon-express-original" },
+            { name: "MongoDB", class: "devicon-mongodb-plain" },
         ],
-        github: 'https://github.com/maru33luc/FunkoStore',
-        demo: 'https://funko-store-seven.vercel.app/home',
-        image: 'funko-shop.jpg'
+        github: "https://github.com/federicogildemuro/backend-coderhouse",
+        demo: "https://e-commerce-api-rest.onrender.com",
+        image: "ecommerce-api.jpg",
     },
     {
-        name: 'Docturno',
-        description: 'Desktop application for managing appointments in a medical clinic. Patients can request appointments and doctors can manage their schedules.',
+        name: "Funko Shop",
+        description:
+            "E-commerce website for a Funko Pop! store. Users can browse the catalog, add items to the cart, and place an order.",
         techIcons: [
-            { name: 'Java', class: 'devicon-java-plain' },
+            { name: "Angular", class: "devicon-angularjs-plain" },
+            { name: "Firebase", class: "devicon-firebase-plain" },
         ],
-        github: 'https://github.com/maru33luc/TP-Final-Lab3',
-        image: 'docturno.jpg'
+        github: "https://github.com/maru33luc/FunkoStore",
+        demo: "https://funko-store-seven.vercel.app/home",
+        image: "funko-shop.jpg",
     },
     {
-        name: 'Tom Misch Tribute',
-        description: 'Web page paying tribute to the musician Tom Misch. Users can read about his life and discography, watch videos, and know his upcoming events.',
-        techIcons: [
-            { name: 'HTML', class: 'devicon-html5-plain-wordmark' },
-            { name: 'CSS', class: 'devicon-css3-plain-wordmark' },
-            { name: 'Bootstrap', class: 'devicon-bootstrap-plain' },
-            { name: 'Sass', class: 'devicon-sass-original' },
-        ],
-        github: 'https://github.com/federicogildemuro/desarrollo-web-coderhouse',
-        demo: 'https://federicogildemuro.github.io/desarrollo-web-coderhouse/',
-        image: 'tom-misch.jpg'
+        name: "Docturno",
+        description:
+            "Desktop application for managing appointments in a medical clinic. Patients can request appointments and doctors can manage their schedules.",
+        techIcons: [{ name: "Java", class: "devicon-java-plain" }],
+        github: "https://github.com/maru33luc/TP-Final-Lab3",
+        image: "docturno.jpg",
     },
     {
-        name: 'Prolijín',
-        description: 'Program for managing clients, products, orders, suppliers, and cash flow, designed for efficient data handling and streamlined operations.',
+        name: "Tom Misch Tribute",
+        description:
+            "Web page paying tribute to the musician Tom Misch. Users can read about his life and discography, watch videos, and know his upcoming events.",
         techIcons: [
-            { name: 'C', class: 'devicon-c-plain' },
+            { name: "HTML", class: "devicon-html5-plain-wordmark" },
+            { name: "CSS", class: "devicon-css3-plain-wordmark" },
+            { name: "Sass", class: "devicon-sass-original" },
+            { name: "Bootstrap", class: "devicon-bootstrap-plain" },
         ],
-        github: 'https://github.com/federicogildemuro/laboratorio2-tup',
-        image: 'prolijin.jpg'
-    }
+        github: "https://github.com/federicogildemuro/desarrollo-web-coderhouse",
+        demo: "https://federicogildemuro.github.io/desarrollo-web-coderhouse",
+        image: "tom-misch.jpg",
+    },
+    {
+        name: "Prolijín",
+        description:
+            "Program for managing clients, products, orders, suppliers, and cash flow, designed for efficient data handling and streamlined operations.",
+        techIcons: [{ name: "C", class: "devicon-c-plain" }],
+        github: "https://github.com/federicogildemuro/laboratorio2-tup",
+        image: "prolijin.jpg",
+    },
 ];
 
 export default projects;
