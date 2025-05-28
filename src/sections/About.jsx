@@ -2,7 +2,9 @@ import {
     frontendIcons,
     backendIcons,
     databaseIcons,
-    toolsIcons,
+    testingIcons,
+    devOpsIcons,
+    othersIcons,
 } from "../data/technologies";
 
 function About() {
@@ -62,9 +64,33 @@ function About() {
                 ))}
             </div>
 
-            <h3 className="text-center">Tools</h3>
+            <h3 className="text-center">Testing</h3>
             <div className="flex flex-wrap justify-center items-center gap-5">
-                {toolsIcons.map((icon, index) => (
+                {testingIcons.map((icon, index) => (
+                    <i
+                        key={index}
+                        className={`${icon.class} text-3xl`}
+                        title={icon.name}
+                        aria-label={icon.name}
+                    />
+                ))}
+            </div>
+
+            <h3 className="text-center">DevOps</h3>
+            <div className="flex flex-wrap justify-center items-center gap-5">
+                {devOpsIcons.map((icon, index) => (
+                    <i
+                        key={index}
+                        className={`${icon.class} text-3xl`}
+                        title={icon.name}
+                        aria-label={icon.name}
+                    />
+                ))}
+            </div>
+
+            <h3 className="text-center">Others</h3>
+            <div className="flex flex-wrap justify-center items-center gap-5">
+                {othersIcons.map((icon, index) => (
                     <i
                         key={index}
                         className={`${icon.class} text-3xl`}
